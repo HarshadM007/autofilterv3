@@ -28,14 +28,21 @@ async def start(bot, update):
             await update.reply_cached_media(
                 file_id,
                 quote=True,
-                caption = caption,
+                caption =file_caption
+
+ ━━━━━━━━━━━━━━━━━━━━━━━
+👥 Group: @cinema_compaany
+🍿 New Release : @cc_newreleased
+📽 Channels : @cc_channels
+🎞 Hindi series : @cc_hindiseries
+📱Movie Links : @cc_linkz,
                 parse_mode="html",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
                             InlineKeyboardButton
                                 (
-                                    'Developers', url="https://t.me/CrazyBotsz"
+                                    'Join Group✔️', url="https://t.me/Cv_movies"
                                 )
                         ]
                     ]
@@ -47,10 +54,9 @@ async def start(bot, update):
         return
 
     buttons = [[
-        InlineKeyboardButton('Developers', url='https://t.me/CrazyBotsz'),
-        InlineKeyboardButton('Source Code 🧾', url ='https://github.com/CrazyBotsz/Adv-Auto-Filter-Bot-V2')
+        InlineKeyboardButton('🎖️CC Group🎖️', url='https://t.me/CV_Movies')
     ],[
-        InlineKeyboardButton('Support 🛠', url='https://t.me/CrazyBotszGrp')
+        InlineKeyboardButton('Support✔️', url='https://t.me/CC_Linkz')
     ],[
         InlineKeyboardButton('Help ⚙', callback_data="help")
     ]]
